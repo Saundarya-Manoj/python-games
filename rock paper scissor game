@@ -1,0 +1,40 @@
+import random
+f=True
+while f: 
+    choices=["rock","paper","scissors"]
+    computer= random.choice(choices)
+    player=None
+    while player not in choices:
+        player=input("rock or paper or scissors?:").lower()
+        print("computer:",computer)
+        print("player:",player)
+        if player==computer:
+            print("its a tie")
+        elif player=="rock":
+            #computer = "paper"
+            if computer =="paper":
+                print("YOU LOOSE HEHE SED LIFE")
+        
+            if computer=="scissors":
+                print("YOU WIN BITCHH")
+        
+        elif player=="paper":
+           # computer = "scissors"
+            if computer =="scissors":
+                print("you loose yaar sed life")
+            if computer=="rock":
+                print("you win gurlll  partyy bekuu")
+            
+        elif player=="scissor":
+           # computer = "rock"
+            if computer=="rock":
+                print("sed u loose")
+            if computer =="paper":
+                print("hehe gurll you wonnn bitchh!!!")
+                  
+                    
+        play_again = input("play again ah???(yes/no):").lower()
+        if play_again!="yes":
+            print("Bye!!")
+            f=False
+            break
